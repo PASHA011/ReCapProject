@@ -6,26 +6,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Concrete.InMemory
+namespace DataAccess.Concrete.EntityFramework
 {
-    public class InmemoryCarDal : ICarDal
+    public class EfColorDal : IColorDal
     {
-        public void Add(Car entity)
+        public void Add(Color entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Car entity)
+        public void Delete(Color entity)
         {
             throw new NotImplementedException();
         }
 
-        public List<Car> GetAll()
+        public List<Color> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Car entity)
+        public void Update(Color entity)
         {
             throw new NotImplementedException();
         }

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Concrete.InMemory
+namespace DataAccess.Concrete.EntityFramework
 {
-    public class InmemoryCarDal : ICarDal
+    public class EfCarDal : ICarDal
     {
         public void Add(Car entity)
         {

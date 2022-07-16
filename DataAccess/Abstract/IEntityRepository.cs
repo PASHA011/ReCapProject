@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    interface IEntityRepository<T>where T :class,IEntity,new()
+   public interface IEntityRepository<T>where T :class,IEntity,new()
     {
         List<T> GetAll();
+        void Add(T entity);
+        void Update(T entity);
+        void Delete(T entity);
     }
 }
