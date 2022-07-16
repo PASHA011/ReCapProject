@@ -1,5 +1,4 @@
-﻿using DataAccess.Abstract;
-using Entities.Concrete;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,36 +6,33 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Concrete.InMemory
+namespace Core.DataAccess.EntityFramework
 {
-    public class InmemoryCarDal : ICarDal
+    public class EfEntityRepositoryBase<TEntity> : IEntityRepository<TEntity>
+         where TEntity : class, IEntity, new()
+       // where TContext : DbContext, new()
     {
-        public void Add(Car entity)
+        public void Add(TEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Car entity)
+        public void Delete(TEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        public Car Get(Expression<Func<Car, bool>> filter)
+        public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public List<Car> GetAll()
+        public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
             throw new NotImplementedException();
         }
 
-        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Car entity)
+        public void Update(TEntity entity)
         {
             throw new NotImplementedException();
         }

@@ -1,42 +1,41 @@
-﻿using DataAccess.Abstract;
+﻿using Business.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Concrete.InMemory
+namespace Business.Concrete
 {
-    public class InmemoryCarDal : ICarDal
+    public class CarManagger : ICarService
     {
-        public void Add(Car entity)
+        public void Add(Car car)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Car entity)
+        public void Delete(Car car)
         {
             throw new NotImplementedException();
         }
 
-        public Car Get(Expression<Func<Car, bool>> filter)
+        public List<Car> GetAll(Car car)
         {
             throw new NotImplementedException();
         }
 
-        public List<Car> GetAll()
+        public List<Car> GetCarsByBrandId(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
+        public List<Car> GetCarsByColorId(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Car entity)
+        public void Update(Car car)
         {
             throw new NotImplementedException();
         }
