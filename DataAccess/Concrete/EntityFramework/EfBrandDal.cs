@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfBrandDal : EfEntityRepositoryBase<Brand>,IBrandDal
+    public class EfBrandDal : EfEntityRepositoryBase<Brand, ReCapProectContext>,IBrandDal
     {
        
     }
