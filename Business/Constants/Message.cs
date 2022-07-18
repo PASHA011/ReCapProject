@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Business.Constants
 {
-    public class Meessages
+    public class Message
     {
         public static string CarAdded = "Araba Eklendi";
         public static string CarDeleted = "Araba Silind";

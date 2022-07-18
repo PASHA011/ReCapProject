@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Utilities.Results;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -9,9 +10,9 @@ namespace Business.Abstract
 {
     public interface IColorService
     {
-        List<Color> GetAll(Color color);
-        void Add(Color color);
-        void Delete(Color color);
-        void Update(Color color);
+        IDataResult<List<Color>> GetAll();
+        IResult Add(Color color);
+        IResult Delete(Color color);
+        IResult Update(Color color);
     }
 }
