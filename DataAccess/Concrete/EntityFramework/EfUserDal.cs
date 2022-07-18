@@ -1,6 +1,6 @@
 ﻿using Core.DataAccess.EntityFramework;
+using Core.Entities.Concrete;
 using DataAccess.Abstract;
-using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfBrandDal : EfEntityRepositoryBase<Brand, ReCapProjectContext>,IBrandDal
+    public class EfUserDal: EfEntityRepositoryBase<User,ReCapProjectContext>,IUserDal
     {
-       
     }
 }

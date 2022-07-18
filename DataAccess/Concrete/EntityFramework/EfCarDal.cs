@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfCarDal : EfEntityRepositoryBase<Car, ReCapProectContext>, ICarDal
+    public class EfCarDal : EfEntityRepositoryBase<Car, ReCapProjectContext>, ICarDal
     {
         public List<CarDetailDto> GetCarDetailDto()
         {
-            using (ReCapProectContext context = new ReCapProectContext())
+            using (ReCapProjectContext context = new ReCapProjectContext())
             {
                 var result = from c in context.Cars
                              join co in context.Colors
