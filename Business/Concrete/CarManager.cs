@@ -19,11 +19,10 @@ namespace Business.Concrete
         ICarDal _efCarDal;
         IColorService _colorService;
         IBrandService _brandService;
-        public CarManager(ICarDal carDal, IColorService colorService, IBrandService brandService)
+        public CarManager(ICarDal carDal)
         {
             _efCarDal = carDal;
-            _colorService = colorService;
-            _brandService = brandService;
+        
         }
         public IResult Add(Car car)
         {
